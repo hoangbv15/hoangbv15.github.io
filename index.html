@@ -1,0 +1,30 @@
+<!DOCTYPE HTML>
+<html>
+  <head>
+    <!-- <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css"> -->
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/css/styles.css">
+  </head>
+  <body>
+    <!-- Canvas needs to be declared first, since draw.js depends on it -->
+    <canvas tabindex='1' id="soundSourcesCanvas" width="500" height="500"></canvas>
+    
+    <script src="assets/js/fileDropZoneHandler.js"></script>
+    <script src="assets/js/jquery-1.11.3.min.js"></script>
+    <script src="assets/js/buffer-loader.js"></script>
+    <script src="assets/js/draw.js"></script>
+    <script src="assets/js/Sound3D.js"></script>
+    <script src="assets/js/SoundPlayer3D.js"></script>
+    <script src="assets/js/mouseHandler.js"></script>
+    <script src="assets/js/keyHandler.js"></script>
+    
+    <div class="centered">
+      <button id="btnplaypause" class="mcontrols play" data-toggle="tooltip" title="Play/pause" onclick="aud_play_pause()" disabled="true"></button>
+      <button class="mcontrols stop" data-toggle="tooltip" title="Stop" onclick="stop()"></button>
+    </div>
+    <div id="drop_zone">Drop files here</div>
+    <output id="list"></output>
+    <!-- This script will bind everything together and start the webapp -->
+    <script src="assets/js/vrheadphonesbootstrap.js"></script>
+  </body>
+</html>

@@ -1,0 +1,49 @@
+body {
+    width: 500px;
+}
+
+.mcontrols {
+    display:block;
+    height: 64px;
+    width: 32px;
+    border: 0;
+    float:left
+}
+
+.play {
+    background: url("../res/imgs/play.png") no-repeat center;
+    background-size: 100%;
+}
+
+.pause {
+    background: url("../res/imgs/pause.png") no-repeat center;
+    background-size: 100%;
+}
+
+.stop {
+    background: url("../res/imgs/stop.png") no-repeat center;
+    background-size: 100%;
+}
+
+div.centered {
+    width: 100px;
+    height: 100px;
+
+    position: relative;
+
+    left: 0;
+    right: 0;
+
+    margin: auto;
+}
+
+#drop_zone {
+  border: 2px dashed #bbb;
+  -moz-border-radius: 5px;
+  -webkit-border-radius: 5px;
+  border-radius: 5px;
+  padding: 25px;
+  text-align: center;
+  font: 20pt bold 'Vollkorn';
+  color: #bbb;
+}
