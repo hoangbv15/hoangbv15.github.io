@@ -1,40 +1,62 @@
-function BufferLoader(context, urlList, callback, obj) {
+function BufferLoader(context, sound3DObj, audioFileUrl, callback, obj) {
 	this.context = context;
-    this.urlList = urlList;
+    this.sound3DObj = sound3DObj;
+    this.audioFileUrl = audioFileUrl;
     this.onload = callback;
-    this.bufferList = new Array();
-    this.loadCount = 0;
     this.obj = obj;
 }
 
-BufferLoader.prototype.loadBuffer = function(url, index) {
+BufferLoader.prototype.loadBuffer = function(fileToLoad) {
+    var msg = "Loading file ";
+    if (fileToLoad instanceof Sound3D) {
+        this.loadBufferFromUrl(fileToLoad.wavFile);
+        displayStatusMessage("Loading file " + getFileNameFromPath(fileToLoad.wavFile));
+    } else if (fileToLoad instanceof File) {
+        this.loadBufferFromLocalFile(fileToLoad);
+        displayStatusMessage("Loading file " + fileToLoad.name);
+    }
+}
+
+BufferLoader.prototype.loadBufferFromLocalFile = function(file) {
+    var reader = new FileReader();
+
+    var loader = this;
+    reader.onload = function(e) {
+        var buffer = reader.result;    
+
+        loader.context.decodeAudioData(
+            buffer,
+            function(buffer) {
+                loader.onload.call(loader.obj, buffer, loader.sound3DObj);
+                displayStatusMessage("Finished loading file " + file.name);
+            },
+            function(e){
+                displayStatusMessage("Error loading file " + file.name);
+            }
+        );
+    }
+    
+    reader.readAsArrayBuffer(file);
+}
+
+BufferLoader.prototype.loadBufferFromUrl = function(url) {
     var request = new XMLHttpRequest();
     request.open("GET", url, true);
     request.responseType = "arraybuffer";
 
     var loader = this;
 
-    // var reader = new FileReader();
-
-    // reader.onload = function(e) {
-    //     var resultArrayBuffer = reader.result;    
-    // }
-    
-    // reader.readAsArrayBuffer(url);
-
     request.onload = function() {
         loader.context.decodeAudioData(
             request.response,
             // file,
             function(buffer) {
-                if (!buffer) {
-                    alert('error decoding file data: ' + url);
-                    return;
-                }
-                loader.bufferList[index] = buffer;
-                if (++loader.loadCount == loader.urlList.length)
-                    loader.onload.call(loader.obj, loader.bufferList);
-            }    
+                loader.onload.call(loader.obj, buffer, loader.sound3DObj);
+                displayStatusMessage("Finished loading file " + getFileNameFromPath(url));
+            },
+            function(e){
+                displayStatusMessage("Error loading file " + getFileNameFromPath(url) + " (format not supported)");
+            }
         );
     }
 
@@ -46,8 +68,5 @@ BufferLoader.prototype.loadBuffer = function(url, index) {
 }
 
 BufferLoader.prototype.load = function() {
-    for (var i = 0; i < this.urlList.length; ++i)
-        // this.loadBuffer(this.urlList[i], i);
-        // Make this a map instead of list
-        this.loadBuffer(this.urlList[i], this.urlList[i]);
+    this.loadBuffer(this.audioFileUrl);
 }

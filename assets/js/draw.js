@@ -16,6 +16,12 @@ var arrowImg = new Image();
 arrowImg.src = "assets/res/imgs/arrow_up.png";
 arrowImg.onload = drawArrow;
 
+var isDragSelecting = false;
+var dragStartX = null;
+var dragStartY = null;
+var dragCurrentX = null;
+var dragCurrentY = null;
+
 // list to hold all sound sources positions
 var rawList = new Array();
 // list to hold all currently selected sound sources
@@ -36,6 +42,8 @@ function draw() {
 
 	drawBackground()
 
+	drawDragSelectRectangle();
+
 	drawSoundSources();
 
 	drawArrow();
@@ -46,6 +54,14 @@ function drawBackground() {
 	// draw background
 	var context = canvas.getContext("2d");
 	context.drawImage(bgImg, 0, 0, canvas.width, canvas.height);
+}
+
+function drawDragSelectRectangle() {
+	if (isDragSelecting) {
+		var context = canvas.getContext("2d");
+		context.setLineDash([2, 3]);
+		context.strokeRect(dragStartX, dragStartY, dragCurrentX - dragStartX, dragCurrentY - dragStartY);
+	}
 }
 
 function drawArrow() {
@@ -88,7 +104,7 @@ function drawSoundSources() {
 		//Draw the name of the sound source
 		if (pos.wavFile != null) {
 			context.fillText(
-					truncateString(pos.wavFile.split("/").pop(), FILENAME_LENGTH),
+					truncateString(getFileNameFromPath(pos.wavFile), FILENAME_LENGTH),
 					x - FONT_SIZE, y);
 		}
 
@@ -100,43 +116,54 @@ function drawSoundSources() {
 	}
 }
 
-function truncateString(s, length) {
-	var newString = s;
-
-	if (newString.length > length) {
-		newString = newString.substring(0, length - 3);
-		newString += "...";
-	}
-
-	return newString;
-}
-
 function isWithinSetPosition(x, y) {
 	for (var i = 0; i < rawList.length; i++) {
 		var pos = rawList[i];
-		var posx = (1 - pos.x) * canvas.width / 2;
-		var posy = (1 - pos.y) * canvas.height / 2;
-		if (Math.abs(x - posx) < circle.width / 2 && Math.abs(y - posy) < circle.height / 2)
+		var abPos = getAbsolutePosition(pos.x, pos.y);
+		if (Math.abs(x - abPos.x) < circle.width / 2 && Math.abs(y - abPos.y) < circle.height / 2)
 			return i;
 	}
 	return -1;
 }
 
-function updatePosition(x, y, rawPos) {
+function updatePosition(x, y, selected) {
 	// Calculate the relative position of the source to the centre of the image
-	rawPos.x = 1 - x * 2 / canvas.width;
-	rawPos.y = 1 - y * 2 / canvas.height;
+	for (var i = 0; i < selected.length; i++) {
+		var pos = selected[i];
+		var abPos = getAbsolutePosition(pos.x, pos.y);
+
+		// update new position of each sound source
+		abPos.x = abPos.x + x - dragStartX;
+		abPos.y = abPos.y + y - dragStartY;
+
+		var relPos = getRelativePosition(abPos.x, abPos.y);
+		pos.update(relPos.x, relPos.y, 0);
+	}
+
+	dragStartX = x;
+	dragStartY = y;
+}
+
+function getRelativePosition(x, y) {
+	return {
+		x: 1 - x * 2 / canvas.width,
+		y: 1 - y * 2 / canvas.height
+	}
+}
+
+function getAbsolutePosition(x, y) {
+	return {
+		x: (1 - x) * canvas.width / 2,
+		y: (1 - y) * canvas.height / 2
+	}
 }
 
 function soundboardClickHandler(x, y, shift_hold) {
 	var index = isWithinSetPosition(x, y);
 	if (index < 0) {
+		if (!shift_hold)
+			selected.length = 0;
 		return;
-		// disable adding new sound sources for now
-		// var newRawPos = new Sound3D(0, 0, 0);
-		// rawList.push(newRawPos);
-		// index = rawList.length - 1;
-		// updatePosition(x, y, newRawPos);
 	}
 
 	currentSound = rawList[index];
@@ -147,11 +174,57 @@ function soundboardClickHandler(x, y, shift_hold) {
 		else {
 			var index = selected.indexOf(currentSound)
 			selected.splice(index, 1);
-		} else {
+	} else {
 		if (selected.indexOf(currentSound) == -1) {
 			selected.length = 0;
 			selected.push(currentSound);
-		} else
-			selected.length = 0;
+		}
 	}
+}
+
+function soundboardDragSelectHandler(x, y, shift_hold) {
+	dragCurrentX = x;
+	dragCurrentY = y;
+
+	// Select the sounds that are within the drag selection
+	var dragSelectList = new Array();
+	for (var i = 0; i < rawList.length; i++) {
+		var pos = rawList[i];
+		var abPos = getAbsolutePosition(pos.x, pos.y);
+
+		if (Math.min(dragCurrentX, dragStartX) < abPos.x && abPos.x < Math.max(dragCurrentX, dragStartX) &&
+			Math.min(dragCurrentY, dragStartY) < abPos.y && abPos.y < Math.max(dragCurrentY, dragStartY)) {
+			dragSelectList.push(pos);
+		}
+	}
+	if (shift_hold) {
+		for (var i = 0; i < dragSelectList.length; i++) {
+			selected.push(dragSelectList[i]);
+		}
+	} else {
+		selected = dragSelectList;
+	}
+}
+
+function startDragSelect(x, y) { 
+	isDragSelecting = true;
+	dragStartX = x;
+	dragStartY = y;
+	dragCurrentX = x;
+	dragCurrentY = y;
+}
+
+function startDragMove(x, y) { 
+	dragStartX = x;
+	dragStartY = y;
+	dragCurrentX = x;
+	dragCurrentY = y;
+}
+
+function stopDrag() {
+	isDragSelecting = false;
+	dragStartX = null;
+    dragStartY = null;
+    dragCurrentX = null;
+	dragCurrentY = null;
 }

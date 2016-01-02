@@ -24,6 +24,12 @@ function doKeyDown(e) {
 		dX += KEYBOARD_SENSITIVITY
 	}
 
+	if (e.keyCode == 46) {
+		// delete
+		if (!soundPlayer.isPlaying())
+			soundPlayer.deleteSelectedSounds();
+	}
+
 
 	rotationVector.rotate(dX, 0, 0);
 	var angle = 0;
@@ -37,4 +43,3 @@ function doKeyDown(e) {
 	if (soundPlayer.isPlaying())
 		soundPlayer.listenerOrientationChangeHandler(rotationVector.x, rotationVector.y, rotationVector.z);
 }
-

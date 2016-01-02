@@ -1,11 +1,14 @@
 body {
-    width: 500px;
+    /*width: 500px;*/
+    margin: 50px;
+    text-align: center;
 }
 
 .mcontrols {
     display:block;
     height: 64px;
     width: 32px;
+    margin-right: 10px;
     border: 0;
     float:left
 }
@@ -25,7 +28,7 @@ body {
     background-size: 100%;
 }
 
-div.centered {
+div.mcontrolsdiv {
     width: 100px;
     height: 100px;
 
@@ -37,13 +40,9 @@ div.centered {
     margin: auto;
 }
 
-#drop_zone {
-  border: 2px dashed #bbb;
-  -moz-border-radius: 5px;
-  -webkit-border-radius: 5px;
-  border-radius: 5px;
-  padding: 25px;
-  text-align: center;
-  font: 20pt bold 'Vollkorn';
-  color: #bbb;
+p {
+    padding: 25px;
+    font: 20pt bold;
+    font-family: "Segoe UI", Arial, Sans-serif;
+    color: #bbb;
 }
