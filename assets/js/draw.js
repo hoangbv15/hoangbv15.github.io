@@ -197,12 +197,11 @@ function soundboardDragSelectHandler(x, y, shift_hold) {
 			dragSelectList.push(pos);
 		}
 	}
-	if (shift_hold) {
-		for (var i = 0; i < dragSelectList.length; i++) {
-			selected.push(dragSelectList[i]);
-		}
-	} else {
-		selected = dragSelectList;
+	if (!shift_hold) {
+		selected.length = 0;
+	} 
+	for (var i = 0; i < dragSelectList.length; i++) {
+		selected.push(dragSelectList[i]);
 	}
 }
 

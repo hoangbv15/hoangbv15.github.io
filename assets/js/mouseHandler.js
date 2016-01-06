@@ -1,8 +1,8 @@
 function getMousePos(canvas, evt) {
 	var rect = canvas.getBoundingClientRect();
 	return {
-	  x: (evt.clientX-rect.left)/(rect.right-rect.left)*canvas.width,
-	  y: (evt.clientY-rect.top)/(rect.bottom-rect.top)*canvas.height
+		x: (evt.clientX - rect.left) / (rect.right - rect.left) * canvas.width,
+		y: (evt.clientY - rect.top) / (rect.bottom - rect.top) * canvas.height
 	};
 }
 
@@ -21,7 +21,7 @@ function doMouseDown(evt) {
 		startDragMove(mousePos.x, mousePos.y);
 		window.addEventListener("mousemove", dragSoundPositionHandler, false);
 		window.addEventListener("mouseup", dragSoundPositionRelease, false);
-	} 
+	}
 }
 
 function dragSoundPositionRelease(evt) {
@@ -52,24 +52,23 @@ function dragSelectHandler(evt) {
 	draw();
 }
 
-
 function doMouseDrop(evt) {
-  evt.stopPropagation();
-  evt.preventDefault();
+	evt.stopPropagation();
+	evt.preventDefault();
 
-  var files = evt.dataTransfer.files; // FileList object.
+	var files = evt.dataTransfer.files; // FileList object.
 
-  var mousePos = getMousePos(canvas, evt);
+	var mousePos = getMousePos(canvas, evt);
 
-  var relPos = getRelativePosition(mousePos.x, mousePos.y);
+	var relPos = getRelativePosition(mousePos.x, mousePos.y);
 
-  for (var i = 0, f; f = files[i]; i++) {
-    soundPlayer.addSoundFile(f, relPos.x, relPos.y);
-  }
+	for (var i = 0, f; f = files[i]; i++) {
+		soundPlayer.addSoundFile(f, relPos.x, relPos.y);
+	}
 }
 
 function doMouseDragOver(evt) {
-  evt.stopPropagation();
-  evt.preventDefault();
-  evt.dataTransfer.dropEffect = 'copy'; // Explicitly show this is a copy.
+	evt.stopPropagation();
+	evt.preventDefault();
+	evt.dataTransfer.dropEffect = 'copy'; // Explicitly show this is a copy.
 }
