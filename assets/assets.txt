@@ -1,7 +1,7 @@
 d:assets:0:application/unknown
 i:badlogic.jpg:68465:image/jpeg
 d:maps:0:application/unknown
-i:maps/test2.png:225:image/png
+i:maps/test2.png:244:image/png
 i:x_sheet.gif:93665:image/gif
 d:sprites:0:application/unknown
 i:sprites/ground.png:446:image/png
