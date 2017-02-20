@@ -2,6 +2,10 @@ d:assets:0:application/unknown
 i:badlogic.jpg:68465:image/jpeg
 d:maps:0:application/unknown
 i:maps/IntroStage.png:288:image/png
+d:data:0:application/unknown
+i:data/main_atlas.png:165031:image/png
+i:data/main_atlas2.png:65401:image/png
+t:data/main_atlas.atlas:768:application/unknown
 i:x_sheet.gif:93665:image/gif
 d:sprites:0:application/unknown
 d:sprites/maps:0:application/unknown
