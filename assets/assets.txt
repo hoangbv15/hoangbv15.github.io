@@ -1,10 +1,12 @@
 d:assets:0:application/unknown
 i:badlogic.jpg:68465:image/jpeg
+b:hs_err_pid27126.log:18121:application/unknown
 d:maps:0:application/unknown
 t:maps/background.atlas:768:application/unknown
 i:maps/background.png:165031:image/png
 i:maps/background2.png:65401:image/png
 i:maps/IntroStage.png:337:image/png
+b:hs_err_pid25649.log:9033:application/unknown
 i:x_sheet.gif:93665:image/gif
 d:sprites:0:application/unknown
 d:sprites/maps:0:application/unknown

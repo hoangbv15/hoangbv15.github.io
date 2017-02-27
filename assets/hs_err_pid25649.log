@@ -1,0 +1,136 @@
+#
+# A fatal error has been detected by the Java Runtime Environment:
+#
+#  SIGSEGV (0xb) at pc=0x0000000000000000, pid=25649, tid=0x00007f61261f0700
+#
+# JRE version: OpenJDK Runtime Environment (8.0_121-b13) (build 1.8.0_121-8u121-b13-0ubuntu1.16.04.2-b13)
+# Java VM: OpenJDK 64-Bit Server VM (25.121-b13 mixed mode linux-amd64 compressed oops)
+# Problematic frame:
+# C  0x0000000000000000
+#
+# Failed to write core dump. Core dumps have been disabled. To enable core dumping, try "ulimit -c unlimited" before starting Java again
+#
+# If you would like to submit a bug report, please visit:
+#   http://bugreport.java.com/bugreport/crash.jsp
+#
+
+---------------  T H R E A D  ---------------
+
+Current thread is native thread
+
+siginfo: si_signo: 11 (SIGSEGV), si_code: 1 (SEGV_MAPERR), si_addr: 0x0000000000000000
+
+Registers:
+RAX=0x00007f61313807c0, RBX=0x0000000000000400, RCX=0x00000000ffffffe0, RDX=0x0000000000001000
+RSP=0x00007f61261efd58, RBP=0x00007f6160351a10, RSI=0x00007f6160366ba0, RDI=0x00007f6160351a10
+R8 =0x0000000000367400, R9 =0x0000000000000001, R10=0x00007f6160351a34, R11=0x0000000000000000
+R12=0x00007f6160355ba0, R13=0x0000000000012000, R14=0x0000000000001000, R15=0x00007f61261eff08
+RIP=0x0000000000000000, EFLAGS=0x0000000000010246, CSGSFS=0x0000000000000033, ERR=0x0000000000000014
+  TRAPNO=0x000000000000000e
+
+Top of Stack: (sp=0x00007f61261efd58)
+0x00007f61261efd58:   00007f61311494d1 0000000038000000
+0x00007f61261efd68:   0000000000000000 00000000bb800000
+0x00007f61261efd78:   00007f6130ccecd8 00007f6100000000
+0x00007f61261efd88:   00007f6130a7e922 0000000000000000
+0x00007f61261efd98:   00007f6148000f30 00007f6144006430
+0x00007f61261efda8:   00007f616918b709 0000000000000000
+0x00007f61261efdb8:   00007f6130a76dab 00007f6148000ef0
+0x00007f61261efdc8:   0000000000000000 0000000000002000
+0x00007f61261efdd8:   0000000000000000 00007f616034d5f0
+0x00007f61261efde8:   00007f6130efc9fa 5700000000000000
+0x00007f61261efdf8:   8ec8be0271e7d400 0000000000000000
+0x00007f61261efe08:   00007f6130efcb04 0000000000000000
+0x00007f61261efe18:   00007f6130a7e922 0000000000002000
+0x00007f61261efe28:   00007f616034d4e0 0000000000002000
+0x00007f61261efe38:   00007f6130a870e2 0000000000002000
+0x00007f61261efe48:   00007f6160355ba0 00007f6160355ba0
+0x00007f61261efe58:   0000000000002000 00007f616034d4e0
+0x00007f61261efe68:   00007f612a212040 00000400261eff00
+0x00007f61261efe78:   00007f61261efe90 00007f61261efeb0
+0x00007f61261efe88:   00007f6130f00a09 00001fa00000037f
+0x00007f61261efe98:   00007f616034d5f0 0000000000000000
+0x00007f61261efea8:   0000000000002000 00007f616034ac60
+0x00007f61261efeb8:   0000000000000000 00007f6160351a10
+0x00007f61261efec8:   0000000000000008 00007f61261eff08
+0x00007f61261efed8:   00007f613115f544 0000000000000000
+0x00007f61261efee8:   00007f61261eff00 0000000000002000
+0x00007f61261efef8:   0000000000008000 00007f612a212040
+0x00007f61261eff08:   0000000000002000 0000000000000000
+0x00007f61261eff18:   00007f616034d170 0000000000000000
+0x00007f61261eff28:   0000000000000000 00007f6169872c8f
+0x00007f61261eff38:   00007f61261f09c0 0000000000000000
+0x00007f61261eff48:   00007f613115273a 0000000000000000 
+
+Instructions: (pc=0x0000000000000000)
+0xffffffffffffffe0:   
+
+Register to memory mapping:
+
+RAX=
+[error occurred during error reporting (printing register info), id 0xb]
+
+Stack: [0x00007f61260f0000,0x00007f61261f1000],  sp=0x00007f61261efd58,  free space=1023k
+
+---------------  P R O C E S S  ---------------
+
+VM state:at safepoint (shutting down)
+
+VM Mutex/Monitor currently owned by a thread:  ([mutex/lock_event])
+[0x00007f6160008280] Threads_lock - owner thread: 0x00007f6160070000
+
+Heap:
+ def new generation   total 38720K, used 26532K [0x0000000083800000, 0x0000000086200000, 0x00000000ad000000)
+  eden space 34432K,  77% used [0x0000000083800000, 0x00000000851e92f8, 0x00000000859a0000)
+  from space 4288K,   0% used [0x00000000859a0000, 0x00000000859a0000, 0x0000000085dd0000)
+  to   space 4288K,   0% used [0x0000000085dd0000, 0x0000000085dd0000, 0x0000000086200000)
+ tenured generation   total 86016K, used 0K [0x00000000ad000000, 0x00000000b2400000, 0x0000000100000000)
+   the space 86016K,   0% used [0x00000000ad000000, 0x00000000ad000000, 0x00000000ad000200, 0x00000000b2400000)
+ Metaspace       used 10010K, capacity 10227K, committed 10368K, reserved 1058816K
+  class space    used 947K, capacity 1030K, committed 1152K, reserved 1048576K
+
+Card table byte_map: [0x00007f6165a48000,0x00007f6165e2d000] byte_map_base: 0x00007f616562c000
+
+Polling page: 0x00007f616988f000
+
+CodeCache: size=245760Kb used=4410Kb max_used=4410Kb free=241349Kb
+ bounds [0x00007f6151000000, 0x00007f6151460000, 0x00007f6160000000]
+ total_blobs=1717 nmethods=1129 adapters=503
+ compilation: enabled
+
+Compilation events (10 events):
+Event: 29.322 Thread 0x00007f61600a6000 nmethod 1125 0x00007f61514495d0 code [0x00007f6151449720, 0x00007f61514497d8]
+Event: 29.331 Thread 0x00007f61600a8000 1126       1       org.lwjgl.opengl.Display::wasResized (4 bytes)
+Event: 29.332 Thread 0x00007f61600a8000 nmethod 1126 0x00007f6151449250 code [0x00007f61514493a0, 0x00007f61514494b0]
+Event: 30.382 Thread 0x00007f61600a6000 1127       4       com.sideprojects.megamanxphantomblade.physics.PhysicsBase::getMapCollision (607 bytes)
+Event: 30.676 Thread 0x00007f61600a8000 1128       3       sun.net.www.protocol.jar.Handler::parseURL (201 bytes)
+Event: 30.729 Thread 0x00007f61600a8000 nmethod 1128 0x00007f615144b750 code [0x00007f615144ba00, 0x00007f615144ce10]
+Event: 30.729 Thread 0x00007f61600a8000 1129       3       sun.net.www.protocol.jar.Handler::parseContextSpec (154 bytes)
+Event: 30.813 Thread 0x00007f61600a8000 nmethod 1129 0x00007f615144d810 code [0x00007f615144dc00, 0x00007f6151450248]
+Event: 30.813 Thread 0x00007f61600a8000 1130       3       sun.net.www.protocol.jar.Handler::indexOfBangSlash (52 bytes)
+Event: 30.822 Thread 0x00007f61600a8000 nmethod 1130 0x00007f615144ab50 code [0x00007f615144ad00, 0x00007f615144b410]
+
+GC Heap History (0 events):
+No events
+
+Deoptimization events (3 events):
+Event: 1.896 Thread 0x00007f61603e4000 Uncommon trap: reason=unstable_if action=reinterpret pc=0x00007f61511b3334 method=java.lang.String.replace(CC)Ljava/lang/String; @ 26
+Event: 15.924 Thread 0x00007f61603e4000 Uncommon trap: reason=unstable_if action=reinterpret pc=0x00007f6151392ec0 method=com.badlogic.gdx.graphics.g2d.SpriteBatch.flush()V @ 41
+Event: 32.338 Thread 0x00007f614c022000 Uncommon trap: reason=class_check action=maybe_recompile pc=0x00007f61513e9e84 method=java.util.concurrent.locks.AbstractQueuedSynchronizer.release(I)Z @ 2
+
+Internal exceptions (10 events):
+Event: 1.284 Thread 0x00007f616000c000 Exception <a 'java/security/PrivilegedActionException'> (0x0000000083f14df8) thrown at [/build/openjdk-8-YiEakL/openjdk-8-8u121-b13/src/hotspot/src/share/vm/prims/jvm.cpp, line 1390]
+Event: 1.284 Thread 0x00007f616000c000 Exception <a 'java/security/PrivilegedActionException'> (0x0000000083f15a50) thrown at [/build/openjdk-8-YiEakL/openjdk-8-8u121-b13/src/hotspot/src/share/vm/prims/jvm.cpp, line 1390]
+Event: 1.284 Thread 0x00007f616000c000 Exception <a 'java/security/PrivilegedActionException'> (0x0000000083f16678) thrown at [/build/openjdk-8-YiEakL/openjdk-8-8u121-b13/src/hotspot/src/share/vm/prims/jvm.cpp, line 1390]
+Event: 1.284 Thread 0x00007f616000c000 Exception <a 'java/security/PrivilegedActionException'> (0x0000000083f18aa0) thrown at [/build/openjdk-8-YiEakL/openjdk-8-8u121-b13/src/hotspot/src/share/vm/prims/jvm.cpp, line 1390]
+Event: 1.284 Thread 0x00007f616000c000 Exception <a 'java/security/PrivilegedActionException'> (0x0000000083f196f8) thrown at [/build/openjdk-8-YiEakL/openjdk-8-8u121-b13/src/hotspot/src/share/vm/prims/jvm.cpp, line 1390]
+Event: 1.284 Thread 0x00007f616000c000 Exception <a 'java/security/PrivilegedActionException'> (0x0000000083f1a320) thrown at [/build/openjdk-8-YiEakL/openjdk-8-8u121-b13/src/hotspot/src/share/vm/prims/jvm.cpp, line 1390]
+Event: 1.284 Thread 0x00007f616000c000 Exception <a 'java/security/PrivilegedActionException'> (0x0000000083f1c468) thrown at [/build/openjdk-8-YiEakL/openjdk-8-8u121-b13/src/hotspot/src/share/vm/prims/jvm.cpp, line 1390]
+Event: 1.284 Thread 0x00007f616000c000 Exception <a 'java/security/PrivilegedActionException'> (0x0000000083f1d0c0) thrown at [/build/openjdk-8-YiEakL/openjdk-8-8u121-b13/src/hotspot/src/share/vm/prims/jvm.cpp, line 1390]
+Event: 1.284 Thread 0x00007f616000c000 Exception <a 'java/security/PrivilegedActionException'> (0x0000000083f1dce8) thrown at [/build/openjdk-8-YiEakL/openjdk-8-8u121-b13/src/hotspot/src/share/vm/prims/jvm.cpp, line 1390]
+Event: 1.939 Thread 0x00007f61603e4000 Exception <a 'java/lang/NoClassDefFoundError': org/lwjgl/opengles/GLContext> (0x000000008432c010) thrown at [/build/openjdk-8-YiEakL/openjdk-8-8u121-b13/src/hotspot/src/share/vm/classfile/systemDictionary.cpp, line 199]
+
+Events (10 events):
+Event: 32.338 Executing VM operation: RevokeBias done
+Event: 32.338 Executing VM operation: RevokeBias
+Event: 32.338 
