@@ -1,5 +1,15 @@
 d:assets:0:application/unknown
 i:badlogic.jpg:68465:image/jpeg
+d:sounds:0:application/unknown
+a:sounds/PL00_U_00038.wav:10390:audio/x-wav
+a:sounds/PL00_U_00021.wav:4834:audio/x-wav
+a:sounds/PL00_U_00036.wav:8598:audio/x-wav
+a:sounds/PL00_U_00039.wav:11062:audio/x-wav
+a:sounds/PL02_U_00019.wav:33002:audio/x-wav
+a:sounds/PL00_U_00035.wav:11622:audio/x-wav
+a:sounds/PL00_U_00022.wav:23034:audio/x-wav
+a:sounds/PL00_U_00018.wav:39722:audio/x-wav
+a:sounds/PL00_U_00025.wav:19226:audio/x-wav
 b:hs_err_pid27126.log:18121:application/unknown
 d:maps:0:application/unknown
 t:maps/background.atlas:768:application/unknown
