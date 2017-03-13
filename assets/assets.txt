@@ -24,13 +24,13 @@ i:sprites/maps/IntroStage/ground.png:1064:image/png
 i:sprites/maps/IntroStage/wall.png:610:image/png
 d:sprites/x:0:application/unknown
 t:sprites/x/wallslide.txt:747:text/plain
-i:sprites/x/run.png:5050:image/png
+i:sprites/x/run.png:4918:image/png
 t:sprites/x/idle.txt:558:text/plain
 i:sprites/x/dash.png:6977:image/png
 i:sprites/x/jump.png:3781:image/png
 t:sprites/x/jump.txt:1124:text/plain
 i:sprites/x/idle.png:2764:image/png
-t:sprites/x/run.txt:1415:text/plain
+t:sprites/x/run.txt:1414:text/plain
 i:sprites/x/wallslide.png:2924:image/png
 t:sprites/x/dash.txt:838:text/plain
 i:Favicon_16x16.png:319:image/png
