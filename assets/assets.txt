@@ -9,6 +9,7 @@ a:sounds/PL00_U_00035.wav:11622:audio/x-wav
 a:sounds/PL00_U_00022.wav:23034:audio/x-wav
 a:sounds/PL00_U_00018.wav:39722:audio/x-wav
 a:sounds/PL00_U_00025.wav:19226:audio/x-wav
+b:hs_err_pid28193.log:38659:application/unknown
 i:Favicon_128x128.png:21043:image/png
 d:maps:0:application/unknown
 t:maps/background.atlas:768:application/unknown
@@ -18,8 +19,8 @@ i:maps/IntroStage.png:337:image/png
 i:x_sheet.gif:93665:image/gif
 i:Favicon_32x32.png:2335:image/png
 d:sprites:0:application/unknown
-t:sprites/wallslide_dust.txt:848:text/plain
-t:sprites/wallslide_kick.txt:468:text/plain
+t:sprites/wallslide_dust.txt:935:text/plain
+t:sprites/wallslide_kick.txt:555:text/plain
 d:sprites/maps:0:application/unknown
 d:sprites/maps/IntroStage:0:application/unknown
 i:sprites/maps/IntroStage/ground.png:1064:image/png
@@ -38,7 +39,7 @@ t:sprites/x/run.txt:1414:text/plain
 i:sprites/x/wallslide.png:2924:image/png
 t:sprites/x/dash_rocket.txt:744:text/plain
 t:sprites/x/dash.txt:838:text/plain
-t:sprites/dash_dust.txt:749:text/plain
+t:sprites/dash_dust.txt:838:text/plain
 i:sprites/wallslide_kick.png:638:image/png
 i:sprites/wallslide_dust.png:845:image/png
 i:Favicon_16x16.png:319:image/png
