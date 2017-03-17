@@ -9,7 +9,6 @@ a:sounds/PL00_U_00035.wav:11622:audio/x-wav
 a:sounds/PL00_U_00022.wav:23034:audio/x-wav
 a:sounds/PL00_U_00018.wav:39722:audio/x-wav
 a:sounds/PL00_U_00025.wav:19226:audio/x-wav
-b:hs_err_pid28193.log:38659:application/unknown
 i:Favicon_128x128.png:21043:image/png
 d:maps:0:application/unknown
 t:maps/background.atlas:768:application/unknown
