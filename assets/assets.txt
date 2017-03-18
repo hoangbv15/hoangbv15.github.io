@@ -28,6 +28,9 @@ i:sprites/dash_dust.png:1520:image/png
 d:sprites/x:0:application/unknown
 t:sprites/x/wallslide.txt:747:text/plain
 i:sprites/x/run.png:4918:image/png
+t:sprites/x/updash_rocket.txt:746:text/plain
+i:sprites/x/updash.png:3106:image/png
+t:sprites/x/updash.txt:365:text/plain
 t:sprites/x/idle.txt:558:text/plain
 i:sprites/x/dash_rocket.png:829:image/png
 i:sprites/x/dash.png:6977:image/png
@@ -37,6 +40,7 @@ i:sprites/x/idle.png:2764:image/png
 t:sprites/x/run.txt:1414:text/plain
 i:sprites/x/wallslide.png:2924:image/png
 t:sprites/x/dash_rocket.txt:744:text/plain
+i:sprites/x/updash_rocket.png:1634:image/png
 t:sprites/x/dash.txt:838:text/plain
 t:sprites/dash_dust.txt:838:text/plain
 i:sprites/wallslide_kick.png:638:image/png
