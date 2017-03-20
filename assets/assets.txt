@@ -14,7 +14,7 @@ d:maps:0:application/unknown
 t:maps/background.atlas:768:application/unknown
 i:maps/background.png:165031:image/png
 i:maps/background2.png:65401:image/png
-i:maps/IntroStage.png:337:image/png
+i:maps/IntroStage.png:341:image/png
 i:x_sheet.gif:93665:image/gif
 i:Favicon_32x32.png:2335:image/png
 d:sprites:0:application/unknown
