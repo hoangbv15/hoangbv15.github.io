@@ -31,7 +31,7 @@ i:sprites/x/run.png:4918:image/png
 t:sprites/x/updash_rocket.txt:746:text/plain
 i:sprites/x/updash.png:3106:image/png
 t:sprites/x/updash.txt:365:text/plain
-t:sprites/x/damaged_normal.txt:466:text/plain
+t:sprites/x/damaged_normal.txt:468:text/plain
 t:sprites/x/idle.txt:558:text/plain
 i:sprites/x/dash_rocket.png:829:image/png
 i:sprites/x/dash.png:6977:image/png
