@@ -5,8 +5,10 @@ a:sounds/PL00_U_00021.wav:4834:audio/x-wav
 a:sounds/PL00_U_00036.wav:8598:audio/x-wav
 a:sounds/PL00_U_00039.wav:11062:audio/x-wav
 a:sounds/PL02_U_00019.wav:33002:audio/x-wav
+a:sounds/PL00_U_00034.wav:21142:audio/x-wav
 a:sounds/PL00_U_00035.wav:11622:audio/x-wav
 a:sounds/PL00_U_00022.wav:23034:audio/x-wav
+a:sounds/PL00_U_00033.wav:21142:audio/x-wav
 a:sounds/PL00_U_00018.wav:39722:audio/x-wav
 a:sounds/PL00_U_00025.wav:19226:audio/x-wav
 i:Favicon_128x128.png:21043:image/png
