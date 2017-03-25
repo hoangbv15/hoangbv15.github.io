@@ -52,6 +52,8 @@ i:sprites/x/updash_rocket.png:1634:image/png
 t:sprites/x/dash.txt:838:text/plain
 t:sprites/dash_dust.txt:838:text/plain
 i:sprites/wallslide_kick.png:638:image/png
+t:sprites/ingame_gui.txt:2874:text/plain
+i:sprites/ingame_gui.png:4823:image/png
 i:sprites/wallslide_dust.png:845:image/png
 i:Favicon_16x16.png:319:image/png
 t:com/badlogic/gdx/graphics/g3d/particles/particles.fragment.glsl:770:application/unknown
