@@ -33,6 +33,7 @@ d:sprites/x:0:application/unknown
 t:sprites/x/wallslide.txt:747:text/plain
 i:sprites/x/run.png:4918:image/png
 t:sprites/x/updash_rocket.txt:746:text/plain
+t:sprites/x/idle_lowhealth.txt:656:text/plain
 i:sprites/x/updash.png:3106:image/png
 t:sprites/x/updash.txt:365:text/plain
 t:sprites/x/damaged_normal.txt:468:text/plain
@@ -45,6 +46,7 @@ i:sprites/x/idle.png:2764:image/png
 i:sprites/x/damaged_normal.png:2568:image/png
 t:sprites/x/run.txt:1414:text/plain
 i:sprites/x/wallslide.png:2924:image/png
+i:sprites/x/idle_lowhealth.png:3227:image/png
 t:sprites/x/dash_rocket.txt:744:text/plain
 i:sprites/x/updash_rocket.png:1634:image/png
 t:sprites/x/dash.txt:838:text/plain
