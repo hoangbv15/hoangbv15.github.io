@@ -1,10 +1,12 @@
 d:assets:0:application/unknown
 d:sounds:0:application/unknown
+a:sounds/PL02_U_00044.wav:51020:audio/x-wav
 a:sounds/PL02_U_00017.wav:16314:audio/x-wav
 a:sounds/PL00_U_00021.wav:4834:audio/x-wav
 a:sounds/PL00_U_00036.wav:8598:audio/x-wav
 a:sounds/PL00_U_00039.wav:11062:audio/x-wav
 a:sounds/PL02_U_00019.wav:33002:audio/x-wav
+a:sounds/PL00_U_00042.wav:54884:audio/x-wav
 a:sounds/PL00_U_00034.wav:21142:audio/x-wav
 a:sounds/PL00_U_00035.wav:11622:audio/x-wav
 a:sounds/PL00_U_00022.wav:23034:audio/x-wav
