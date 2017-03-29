@@ -36,7 +36,7 @@ d:sprites/x:0:application/unknown
 i:sprites/x/wallslide_shoot_light.png:8414:image/png
 i:sprites/x/shoot_muzzle.png:1259:image/png
 t:sprites/x/wallslide_shoot_light.txt:952:text/plain
-i:sprites/x/dash_shoot_light.png:6208:image/png
+i:sprites/x/dash_shoot_light.png:6837:image/png
 t:sprites/x/wallslide.txt:747:text/plain
 i:sprites/x/wallslide_shoot_nolight.png:8390:image/png
 i:sprites/x/run.png:4918:image/png
@@ -46,9 +46,9 @@ i:sprites/x/updash.png:3106:image/png
 t:sprites/x/updash.txt:365:text/plain
 t:sprites/x/jump_shoot_nolight.txt:1138:text/plain
 t:sprites/x/bullet_small.txt:547:text/plain
-i:sprites/x/dash_shoot_nolight.png:6317:image/png
+i:sprites/x/dash_shoot_nolight.png:6857:image/png
 t:sprites/x/damaged_normal.txt:468:text/plain
-t:sprites/x/dash_shoot_nolight.txt:853:text/plain
+t:sprites/x/dash_shoot_nolight.txt:854:text/plain
 i:sprites/x/run_shoot_nolight.png:10203:image/png
 t:sprites/x/idle_shoot.txt:844:text/plain
 t:sprites/x/idle.txt:558:text/plain
@@ -56,7 +56,7 @@ i:sprites/x/run_shoot_light.png:10068:image/png
 i:sprites/x/bullet_small.png:514:image/png
 t:sprites/x/wallslide_shoot_nolight.txt:954:text/plain
 t:sprites/x/run_shoot_light.txt:1422:text/plain
-t:sprites/x/dash_shoot_light.txt:851:text/plain
+t:sprites/x/dash_shoot_light.txt:852:text/plain
 i:sprites/x/dash_rocket.png:829:image/png
 i:sprites/x/dash.png:6977:image/png
 i:sprites/x/jump.png:3781:image/png
