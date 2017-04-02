@@ -3,6 +3,7 @@ d:sounds:0:application/unknown
 a:sounds/PL02_U_00044.wav:51020:audio/x-wav
 a:sounds/PL02_U_00017.wav:16314:audio/x-wav
 a:sounds/PL00_U_00021.wav:4834:audio/x-wav
+a:sounds/PL02_U_00024_LOOP.wav:54536:audio/x-wav
 a:sounds/PL00_U_00036.wav:8598:audio/x-wav
 a:sounds/PL00_U_00039.wav:11062:audio/x-wav
 a:sounds/PL00_U_00027.wav:18890:audio/x-wav
