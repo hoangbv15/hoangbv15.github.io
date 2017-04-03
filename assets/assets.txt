@@ -49,6 +49,7 @@ t:sprites/x/idle_lowhealth.txt:656:text/plain
 i:sprites/x/updash.png:3106:image/png
 t:sprites/x/updash.txt:365:text/plain
 t:sprites/x/jump_shoot_nolight.txt:1138:text/plain
+i:sprites/x/charge_particles_gray.png:11073:image/png
 t:sprites/x/bullet_small.txt:547:text/plain
 i:sprites/x/dash_shoot_nolight.png:6857:image/png
 t:sprites/x/damaged_normal.txt:468:text/plain
