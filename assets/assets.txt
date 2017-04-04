@@ -7,6 +7,7 @@ a:sounds/PL02_U_00024_LOOP.wav:54536:audio/x-wav
 a:sounds/PL00_U_00036.wav:8598:audio/x-wav
 a:sounds/PL00_U_00039.wav:11062:audio/x-wav
 a:sounds/PL00_U_00027.wav:18890:audio/x-wav
+a:sounds/ST0E_U0_00015.wav:31714:audio/x-wav
 a:sounds/PL00_U_00016.wav:45434:audio/x-wav
 a:sounds/PL02_U_00019.wav:33002:audio/x-wav
 a:sounds/PL02_U_00024.wav:153514:audio/x-wav
@@ -15,9 +16,11 @@ a:sounds/PL00_U_00034.wav:21142:audio/x-wav
 a:sounds/PL00_U_00035.wav:11622:audio/x-wav
 a:sounds/PL00_U_00022.wav:23034:audio/x-wav
 a:sounds/PL00_U_00033.wav:21142:audio/x-wav
+a:sounds/PL02_U_00043.wav:28284:audio/x-wav
 a:sounds/PL00_U_00023.wav:31154:audio/x-wav
 a:sounds/PL02_U_00020.wav:29082:audio/x-wav
 a:sounds/PL00_U_00018.wav:39722:audio/x-wav
+a:sounds/ST0E_U0_00005.wav:13290:audio/x-wav
 a:sounds/PL00_U_00025.wav:19226:audio/x-wav
 i:Favicon_128x128.png:21043:image/png
 d:maps:0:application/unknown
@@ -30,6 +33,7 @@ i:Favicon_32x32.png:2335:image/png
 d:sprites:0:application/unknown
 t:sprites/wallslide_dust.txt:935:text/plain
 t:sprites/wallslide_kick.txt:555:text/plain
+t:sprites/bullet_nodamage_explode.txt:664:text/plain
 d:sprites/maps:0:application/unknown
 d:sprites/maps/IntroStage:0:application/unknown
 i:sprites/maps/IntroStage/ground.png:1064:image/png
@@ -95,6 +99,7 @@ i:sprites/x/updash_rocket.png:1634:image/png
 t:sprites/x/jump_shoot_light.txt:1134:text/plain
 t:sprites/x/dash.txt:838:text/plain
 t:sprites/dash_dust.txt:838:text/plain
+i:sprites/bullet_nodamage_explode.png:3881:image/png
 i:sprites/wallslide_kick.png:638:image/png
 t:sprites/ingame_gui.txt:2874:text/plain
 i:sprites/ingame_gui.png:4823:image/png
