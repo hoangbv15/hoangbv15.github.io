@@ -49,11 +49,11 @@ t:sprites/x/idle_lowhealth.txt:656:text/plain
 i:sprites/x/updash.png:3106:image/png
 t:sprites/x/updash.txt:365:text/plain
 t:sprites/x/jump_shoot_nolight.txt:1138:text/plain
-i:sprites/x/charge_particles_gray.png:11073:image/png
 t:sprites/x/bullet_small.txt:547:text/plain
 i:sprites/x/dash_shoot_nolight.png:6857:image/png
 t:sprites/x/damaged_normal.txt:468:text/plain
 t:sprites/x/dash_shoot_nolight.txt:854:text/plain
+t:sprites/x/bullet_heavy_explode.txt:475:text/plain
 i:sprites/x/shoot_heavy_muzzle.png:4902:image/png
 i:sprites/x/run_shoot_nolight.png:10203:image/png
 t:sprites/x/idle_shoot.txt:844:text/plain
@@ -86,6 +86,7 @@ i:sprites/x/shoot_medium_muzzle.png:882:image/png
 t:sprites/x/run.txt:1414:text/plain
 i:sprites/x/charge_particles.png:6049:image/png
 i:sprites/x/wallslide.png:2924:image/png
+i:sprites/x/bullet_heavy_explode.png:5995:image/png
 t:sprites/x/bullet_small_explode.txt:563:text/plain
 i:sprites/x/idle_lowhealth.png:3227:image/png
 t:sprites/x/dash_rocket.txt:744:text/plain
