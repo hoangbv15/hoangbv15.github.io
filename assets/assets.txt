@@ -30,7 +30,7 @@ t:maps/background.atlas:768:application/unknown
 i:maps/background.png:165031:image/png
 i:maps/wall.png:610:image/png
 i:maps/background2.png:65401:image/png
-b:maps/IntroStage.tmx:10814:application/unknown
+b:maps/IntroStage.tmx:11642:application/unknown
 i:x_sheet.gif:93665:image/gif
 i:Favicon_32x32.png:2335:image/png
 d:sprites:0:application/unknown
