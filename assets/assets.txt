@@ -29,7 +29,7 @@ t:maps/background.atlas:768:application/unknown
 i:maps/background.png:165031:image/png
 i:maps/wall.png:610:image/png
 i:maps/background2.png:65401:image/png
-b:maps/IntroStage.tmx:10802:application/unknown
+b:maps/IntroStage.tmx:10814:application/unknown
 i:x_sheet.gif:93665:image/gif
 i:Favicon_32x32.png:2335:image/png
 d:sprites:0:application/unknown
@@ -97,6 +97,11 @@ i:sprites/x/updash_rocket.png:1634:image/png
 t:sprites/x/jump_shoot_light.txt:1134:text/plain
 t:sprites/x/dash.txt:838:text/plain
 t:sprites/dash_dust.txt:838:text/plain
+d:sprites/enemies:0:application/unknown
+t:sprites/enemies/mettool.txt:3591:text/plain
+i:sprites/enemies/enemy_explode.png:13517:image/png
+i:sprites/enemies/mettool.png:16006:image/png
+t:sprites/enemies/enemy_explode.txt:1897:text/plain
 i:sprites/bullet_nodamage_explode.png:3881:image/png
 i:sprites/wallslide_kick.png:638:image/png
 t:sprites/ingame_gui.txt:2874:text/plain
