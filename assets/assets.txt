@@ -14,6 +14,7 @@ a:sounds/PL02_U_00024.wav:153514:audio/x-wav
 a:sounds/PL00_U_00042.wav:54884:audio/x-wav
 a:sounds/PL00_U_00034.wav:21142:audio/x-wav
 a:sounds/PL00_U_00035.wav:11622:audio/x-wav
+a:sounds/ST0E_U0_00001.wav:36810:audio/x-wav
 a:sounds/PL00_U_00022.wav:23034:audio/x-wav
 a:sounds/PL00_U_00033.wav:21142:audio/x-wav
 a:sounds/PL02_U_00043.wav:28284:audio/x-wav
