@@ -25,12 +25,11 @@ a:sounds/ST0E_U0_00005.wav:13290:audio/x-wav
 a:sounds/PL00_U_00025.wav:19226:audio/x-wav
 i:Favicon_128x128.png:21043:image/png
 d:maps:0:application/unknown
-i:maps/ground.png:1064:image/png
+i:maps/ground.png:8634:image/png
 t:maps/background.atlas:768:application/unknown
 i:maps/background.png:165031:image/png
-i:maps/wall.png:610:image/png
 i:maps/background2.png:65401:image/png
-b:maps/IntroStage.tmx:11642:application/unknown
+b:maps/IntroStage.tmx:18041:application/unknown
 i:Favicon_32x32.png:2335:image/png
 d:sprites:0:application/unknown
 t:sprites/wallslide_dust.txt:935:text/plain
