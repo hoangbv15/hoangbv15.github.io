@@ -3,7 +3,7 @@ i:Favicon_128x128.png:21043:image/png
 i:Favicon_16x16.png:319:image/png
 i:Favicon_32x32.png:2335:image/png
 d:maps:0:application/unknown
-b:maps/IntroStage.tmx:20692:application/unknown
+b:maps/IntroStage.tmx:22439:application/unknown
 i:maps/background.png:1157773:image/png
 t:maps/background.txt:3976:text/plain
 d:maps/backup:0:application/unknown
@@ -45,6 +45,8 @@ i:sprites/enemies/enemy_explode.png:13517:image/png
 t:sprites/enemies/enemy_explode.txt:1897:text/plain
 i:sprites/enemies/mettool.png:16006:image/png
 t:sprites/enemies/mettool.txt:3591:text/plain
+i:sprites/enemies/nightmare_virus.png:10179:image/png
+t:sprites/enemies/nightmare_virus.txt:1616:text/plain
 i:sprites/ingame_gui.png:4823:image/png
 t:sprites/ingame_gui.txt:2874:text/plain
 i:sprites/wallslide_dust.png:845:image/png
