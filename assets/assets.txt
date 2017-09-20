@@ -12,6 +12,7 @@ i:maps/backup/background.png:165031:image/png
 i:maps/backup/background2.png:65401:image/png
 i:maps/ground.png:10106:image/png
 d:sounds:0:application/unknown
+a:sounds/01054.wav:18498:audio/x-wav
 a:sounds/PL00_U_00016.wav:45434:audio/x-wav
 a:sounds/PL00_U_00018.wav:39722:audio/x-wav
 a:sounds/PL00_U_00021.wav:4834:audio/x-wav
