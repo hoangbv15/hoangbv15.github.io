@@ -6896,13 +6896,13 @@ j,com.rahul.libgdx.parallax.TextureRegionParallaxLayer::texRegion,com.rahul.libg
 kVb,com.rahul.libgdx.parallax.Utils::calculateOtherDimension(Lcom/rahul/libgdx/parallax/Utils$WH;FFF)F,com.rahul.libgdx.parallax.Utils,calculateOtherDimension,com/rahul/libgdx/parallax/Utils.java,48,0
 lVb,com.rahul.libgdx.parallax.Utils::calculateOtherDimension(Lcom/rahul/libgdx/parallax/Utils$WH;FLcom/badlogic/gdx/graphics/g2d/TextureRegion;)F,com.rahul.libgdx.parallax.Utils,calculateOtherDimension,com/rahul/libgdx/parallax/Utils.java,22,0
 Attack,,com.sideprojects.megamanxphantomblade.Attack,,com/sideprojects/megamanxphantomblade/Attack.java,6,-1
-uVb,com.sideprojects.megamanxphantomblade.Attack::Attack(Lcom/sideprojects/megamanxphantomblade/Damage;I) <init>,com.sideprojects.megamanxphantomblade.Attack,Attack,com/sideprojects/megamanxphantomblade/Attack.java,11,0
+uVb,com.sideprojects.megamanxphantomblade.Attack::Attack(Lcom/sideprojects/megamanxphantomblade/Damage;I) <init>,com.sideprojects.megamanxphantomblade.Attack,Attack,com/sideprojects/megamanxphantomblade/Attack.java,19,0
 I,com.sideprojects.megamanxphantomblade.Attack::damage,com.sideprojects.megamanxphantomblade.Attack,damage,com/sideprojects/megamanxphantomblade/Attack.java,7,-1
 J,com.sideprojects.megamanxphantomblade.Attack::shouldBeRemoved,com.sideprojects.megamanxphantomblade.Attack,shouldBeRemoved,com/sideprojects/megamanxphantomblade/Attack.java,8,-1
 K,com.sideprojects.megamanxphantomblade.Attack::targetTookDamage,com.sideprojects.megamanxphantomblade.Attack,targetTookDamage,com/sideprojects/megamanxphantomblade/Attack.java,9,-1
 Damage,,com.sideprojects.megamanxphantomblade.Damage,,com/sideprojects/megamanxphantomblade/Damage.java,7,-1
-vVb,com.sideprojects.megamanxphantomblade.Damage::$getDamage(Lcom/sideprojects/megamanxphantomblade/Damage;)I,com.sideprojects.megamanxphantomblade.Damage,$getDamage,com/sideprojects/megamanxphantomblade/Damage.java,38,0
-wVb,com.sideprojects.megamanxphantomblade.Damage::Damage(Lcom/sideprojects/megamanxphantomblade/Damage$Type;Lcom/sideprojects/megamanxphantomblade/Damage$Side;I) <init>,com.sideprojects.megamanxphantomblade.Damage,Damage,com/sideprojects/megamanxphantomblade/Damage.java,32,0
+vVb,com.sideprojects.megamanxphantomblade.Damage::$getDamage(Lcom/sideprojects/megamanxphantomblade/Damage;)I,com.sideprojects.megamanxphantomblade.Damage,$getDamage,com/sideprojects/megamanxphantomblade/Damage.java,50,0
+wVb,com.sideprojects.megamanxphantomblade.Damage::Damage(Lcom/sideprojects/megamanxphantomblade/Damage$Type;Lcom/sideprojects/megamanxphantomblade/Damage$Side;I) <init>,com.sideprojects.megamanxphantomblade.Damage,Damage,com/sideprojects/megamanxphantomblade/Damage.java,44,0
 a,com.sideprojects.megamanxphantomblade.Damage::difficulty,com.sideprojects.megamanxphantomblade.Damage,difficulty,com/sideprojects/megamanxphantomblade/Damage.java,30,-1
 b,com.sideprojects.megamanxphantomblade.Damage::side,com.sideprojects.megamanxphantomblade.Damage,side,com/sideprojects/megamanxphantomblade/Damage.java,29,-1
 c,com.sideprojects.megamanxphantomblade.Damage::type,com.sideprojects.megamanxphantomblade.Damage,type,com/sideprojects/megamanxphantomblade/Damage.java,28,-1
