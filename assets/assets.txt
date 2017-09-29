@@ -11,6 +11,13 @@ t:maps/backup/background.atlas:768:application/unknown
 i:maps/backup/background.png:165031:image/png
 i:maps/backup/background2.png:65401:image/png
 i:maps/ground.png:10106:image/png
+d:shaders:0:application/unknown
+d:shaders/frag:0:application/unknown
+b:shaders/frag/brighten.frag:376:application/unknown
+b:shaders/frag/passthrough.frag:246:application/unknown
+d:shaders/vert:0:application/unknown
+b:shaders/vert/colour.vert:642:application/unknown
+b:shaders/vert/passthrough.vert:610:application/unknown
 d:sounds:0:application/unknown
 a:sounds/01054.wav:18498:audio/x-wav
 a:sounds/PL00_U_00016.wav:45434:audio/x-wav
