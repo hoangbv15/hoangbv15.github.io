@@ -120,11 +120,11 @@ i:sprites/x/wallslide_shoot_light.png:8414:image/png
 t:sprites/x/wallslide_shoot_light.txt:952:text/plain
 i:sprites/x/wallslide_shoot_nolight.png:8390:image/png
 t:sprites/x/wallslide_shoot_nolight.txt:954:text/plain
-t:com/badlogic/gdx/graphics/g3d/particles/particles.fragment.glsl:770:application/unknown
-t:com/badlogic/gdx/graphics/g3d/particles/particles.vertex.glsl:2886:application/unknown
-t:com/badlogic/gdx/graphics/g3d/shaders/default.fragment.glsl:5162:application/unknown
-t:com/badlogic/gdx/graphics/g3d/shaders/default.vertex.glsl:8824:application/unknown
-t:com/badlogic/gdx/graphics/g3d/shaders/depth.fragment.glsl:869:application/unknown
-t:com/badlogic/gdx/graphics/g3d/shaders/depth.vertex.glsl:2923:application/unknown
+t:com/badlogic/gdx/graphics/g3d/particles/particles.fragment.glsl:859:application/unknown
+t:com/badlogic/gdx/graphics/g3d/particles/particles.vertex.glsl:2996:application/unknown
+t:com/badlogic/gdx/graphics/g3d/shaders/default.fragment.glsl:5350:application/unknown
+t:com/badlogic/gdx/graphics/g3d/shaders/default.vertex.glsl:9159:application/unknown
+t:com/badlogic/gdx/graphics/g3d/shaders/depth.fragment.glsl:904:application/unknown
+t:com/badlogic/gdx/graphics/g3d/shaders/depth.vertex.glsl:3056:application/unknown
 t:com/badlogic/gdx/utils/arial-15.fnt:21743:application/unknown
 i:com/badlogic/gdx/utils/arial-15.png:21814:image/png
